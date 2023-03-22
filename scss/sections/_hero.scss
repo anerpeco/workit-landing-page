@@ -1,0 +1,78 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+main{
+    overflow: hidden;
+}
+
+.hero{
+    position: relative;
+    background-color: $primary;
+
+    &__title{
+
+        span{
+            border-bottom: 3px solid $secondary;
+        }
+    }
+
+    .img-hero{
+        position: absolute;
+        left: 50%;
+        bottom: -50%;
+        transform: translate(-50%, 0%);
+        display: block;
+        width: 320px;
+
+        @include media-breakpoint-up(md){
+            width: 32.125rem;
+        }
+
+        @include media-breakpoint-up(xl){
+            width: 47.9375rem;
+        }
+    }
+
+    .bg-hero{
+        position: absolute;
+        visibility: hidden;
+
+        @include media-breakpoint-up(md){
+            visibility: visible;
+
+            &__1{
+                top: -1.6875rem;
+                left: -14.1875rem;
+            }
+
+            &__2{
+                top: 9.5rem;
+                right: -5.8125rem;
+            }
+        }
+
+        @include media-breakpoint-up(xl){
+            &__1{
+                top: -2.125rem;
+                left: -8.625rem;
+            }
+
+            &__2{
+                top: 10.25rem;
+                right: -3rem;
+            }
+        }
+    }
+}
+
+.oval__hero{
+    // background: radial-gradient(120% 120px at 50% -30px, $primary 75%, transparent 75%) no-repeat;
+    // height: 80px;
+
+    @include bgRoundedBottom();
+
+    &::before{
+        background: $primary;
+    }
+}
+

@@ -1,0 +1,83 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.features{
+    background-color: $gray-400;
+    padding: 9.6875rem 1rem 0;
+
+    @include media-breakpoint-up(md){
+        padding: 12.75rem 6.125rem 0;
+
+        &__row{
+            align-items: center;
+        }
+    }
+
+    @include media-breakpoint-up(xl){
+        padding: 15.9375rem 10.25rem 6.9375rem;
+    }
+
+    &__number{
+        font-family: $font-family-header;
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 2.25rem;
+        color: $primary;
+        border: 1px solid $gray-800;
+        border-radius: 50%;
+        width: 3rem;
+        margin: 0 auto;
+        margin-bottom: 1.5rem;
+        text-align: center;
+
+        @include media-breakpoint-up(xl){
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+            width: 3.5rem;
+            margin-bottom: 3.5rem;
+        }
+    }
+
+    &__title{
+        font-family: $font-family-header;
+        font-size: 1.75rem;
+        font-weight: 600;
+        line-height: 2.25rem;
+        color: $primary;
+        margin-bottom: 1rem;
+
+        @include media-breakpoint-up(xl){
+            font-size: 2rem;
+            line-height: 2.5rem;
+            margin-bottom: 1.75rem;
+        }
+    }
+
+    &__content{
+        font-family: $font-family-base;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.75rem;
+        color: $gray-800;
+        margin-bottom: 2.5rem;
+
+        @include media-breakpoint-up(md){
+            margin-bottom: 3rem;
+        }
+
+        @include media-breakpoint-up(xxl){
+            font-size: 1.125rem;
+            line-height: 2rem;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.oval__features{
+
+    @include bgRoundedBottom();
+
+    &::before{
+        background: $gray-400;
+    }
+}

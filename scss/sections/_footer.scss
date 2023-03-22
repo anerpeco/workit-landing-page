@@ -1,0 +1,29 @@
+@use "../custom" as *;
+
+.footer{
+    position: relative;
+    // margin-top: 4.625rem;
+    margin-bottom: 4rem;
+    // overflow: visible;
+    // z-index: -1;
+
+    &__logo{
+        width: 6rem;
+        margin-bottom: 3.625rem;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    &__social{
+        width: 1.25rem;
+        height: 1.25rem;
+        margin: 0 .875rem;
+        fill: $gray-800;
+
+        &:hover{
+            fill: $primary;
+        }
+    }
+}

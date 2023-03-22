@@ -1,0 +1,28 @@
+@use "../custom" as *;
+
+.display-4{
+    font-family: $font-family-header;
+
+    &--hero{
+        font-size: 3.125rem;
+        font-weight: 600;
+        line-height: 3.125rem;
+        color: $white;
+        max-width: 21.4375rem;
+        padding-top: 2rem;
+
+        @include media-breakpoint-up(md){
+            font-size: 3.75rem;
+            line-height: 3.75rem;
+            max-width: 35.8125rem;
+            padding-top: 1.5rem;
+        }
+
+        @include media-breakpoint-up(xl){
+            font-size: 5rem;
+            line-height: 5rem;
+            max-width: 39.6875rem;
+            padding-top: 0;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+
+$indigo:  #24053E;
+$teal:    #44FFA1;
+
+$white:    #fff;
+$gray-400: #FCF8FF;
+$gray-800: #584D62;
+$black:    #000;
+
+$primary:       $indigo;
+$secondary:     $teal;
+
+$font-family-sans-serif:      "Manrope", sans-serif;
+$font-family-serif:       "Fraunces", serif;
+$font-family-base:            $font-family-sans-serif;
+$font-family-header:            $font-family-serif;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+

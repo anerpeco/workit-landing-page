@@ -1,0 +1,19 @@
+@use "../custom" as *;
+
+@mixin bgRoundedBottom(){
+    position: relative;
+    overflow: hidden;
+    height: 3.75rem;
+    z-index: -1;
+
+    &::before{
+        border-radius: 100%;
+        position: absolute;
+        // background: $primary;
+        right: -12.5rem;
+        left: -12.5rem;
+        top: -12.5rem;
+        content: "";
+        bottom: 0;
+    }
+}
