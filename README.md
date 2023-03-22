@@ -23,7 +23,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/anerpeco/workit-landing-page)
-- Live Site URL: [Vercel](https://your-live-site-url.com)
+- Live Site URL: [Vercel](https://workit-landing-page-anerpeco.vercel.app/)
 
 ## My process
 
